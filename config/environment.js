@@ -4,6 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'firebase-test',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' wss://*.firebaseio.com" },
+    firebase: 'https://posts-test.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
